@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: #000;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    cursor: crosshair;
+}
+
+#gameUI {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+}
+
+#connectionStatus {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border-left: 3px solid #ffa500;
+}
+
+#connectionStatus.connected {
+    border-left-color: #00ff00;
+}
+
+#connectionStatus.disconnected {
+    border-left-color: #ff0000;
+}
+
+#playerCount {
+    font-size: 12px;
+    padding: 3px 8px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
